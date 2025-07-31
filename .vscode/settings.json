@@ -1,0 +1,12 @@
+{
+  "chat.mcp.discovery.enabled": true,
+  "mcpServers": {
+    "TalkToFigma": {
+      "command": "bunx",
+      "args": [
+        "cursor-talk-to-figma-mcp@latest"
+      ]
+    }
+  },
+  "chat.agent.enabled": true
+}

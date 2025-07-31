@@ -1,0 +1,794 @@
+[
+  {
+    "type": "EFFECT",
+    "styles": [
+      {
+        "id": "349:8173",
+        "name": "shadowBox",
+        "type": "EFFECT",
+        "remote": true,
+        "description": ""
+      }
+    ]
+  },
+  {
+    "type": "FILL",
+    "styles": [
+      {
+        "id": "2:54",
+        "name": "Label Color/Light/Primary",
+        "type": "FILL",
+        "remote": true,
+        "description": ""
+      },
+      {
+        "id": "2:29",
+        "name": "Label Color/Dark/Primary",
+        "type": "FILL",
+        "remote": true,
+        "description": ""
+      },
+      {
+        "id": "2:58",
+        "name": "Label Color/Dark/Primary",
+        "type": "FILL",
+        "remote": true,
+        "description": ""
+      },
+      {
+        "id": "349:8179",
+        "name": "red",
+        "type": "FILL",
+        "remote": true,
+        "description": ""
+      },
+      {
+        "id": "349:8157",
+        "name": "3",
+        "type": "FILL",
+        "remote": true,
+        "description": ""
+      },
+      {
+        "id": "349:8160",
+        "name": "f",
+        "type": "FILL",
+        "remote": true,
+        "description": ""
+      },
+      {
+        "id": "349:8086",
+        "name": "7",
+        "type": "FILL",
+        "remote": true,
+        "description": ""
+      },
+      {
+        "id": "349:8087",
+        "name": "black",
+        "type": "FILL",
+        "remote": true,
+        "description": ""
+      },
+      {
+        "id": "349:8120",
+        "name": "gray/500",
+        "type": "FILL",
+        "remote": true,
+        "description": "Icon, Guide"
+      },
+      {
+        "id": "349:8121",
+        "name": "gray/400",
+        "type": "FILL",
+        "remote": true,
+        "description": "white-theme(\nfont mainDesc)"
+      },
+      {
+        "id": "349:8125",
+        "name": "gray/600",
+        "type": "FILL",
+        "remote": true,
+        "description": "Disabled element,\nblack-theme (fontMainDesc,fontSubDesc),\ndarkgray(font MainDesc)"
+      },
+      {
+        "id": "349:8119",
+        "name": "gray/white",
+        "type": "FILL",
+        "remote": true,
+        "description": "Text, Btn, Bg, \ndarkgray(font MainTitle, font SubTitle)"
+      },
+      {
+        "id": "349:8131",
+        "name": "primary/pri500",
+        "type": "FILL",
+        "remote": true,
+        "description": "Primary Normal"
+      },
+      {
+        "id": "349:8132",
+        "name": "primary/pri400",
+        "type": "FILL",
+        "remote": true,
+        "description": ""
+      },
+      {
+        "id": "349:8134",
+        "name": "🌕/Black",
+        "type": "FILL",
+        "remote": true,
+        "description": ""
+      },
+      {
+        "id": "349:8133",
+        "name": "🌕/White",
+        "type": "FILL",
+        "remote": true,
+        "description": ""
+      },
+      {
+        "id": "349:8137",
+        "name": "main/pri 100",
+        "type": "FILL",
+        "remote": true,
+        "description": ""
+      },
+      {
+        "id": "349:8139",
+        "name": "gray/300",
+        "type": "FILL",
+        "remote": true,
+        "description": "Main Text\nwhite-theme(fontSubDesc-626262에서바뀜)\nblack-theme, darkgray-theme (BG Sub-5454에서바뀜)"
+      },
+      {
+        "id": "349:8141",
+        "name": "gray/700",
+        "type": "FILL",
+        "remote": true,
+        "description": "Disabled Text"
+      },
+      {
+        "id": "349:8135",
+        "name": "gray/bg",
+        "type": "FILL",
+        "remote": true,
+        "description": "Background"
+      },
+      {
+        "id": "349:8140",
+        "name": "gray/900",
+        "type": "FILL",
+        "remote": true,
+        "description": "Horizontal Line"
+      },
+      {
+        "id": "349:8142",
+        "name": "error/err500",
+        "type": "FILL",
+        "remote": true,
+        "description": "Normal\n"
+      },
+      {
+        "id": "349:8136",
+        "name": "gray/800",
+        "type": "FILL",
+        "remote": true,
+        "description": "Vertical Line,\nwhite-theme(Line-Normal)"
+      },
+      {
+        "id": "349:8146",
+        "name": "9",
+        "type": "FILL",
+        "remote": true,
+        "description": ""
+      },
+      {
+        "id": "349:8154",
+        "name": "gray/100",
+        "type": "FILL",
+        "remote": true,
+        "description": "Btn, Title,\nwhite-theme(fontSubTitle), black-theme(BG-Main-111에서 바뀜)"
+      },
+      {
+        "id": "349:8155",
+        "name": "gray/200",
+        "type": "FILL",
+        "remote": true,
+        "description": "Normal-Icon, Title,\nwhite-theme(fontMaintitle),\nblack-theme(Line Normal)"
+      },
+      {
+        "id": "349:8156",
+        "name": "gray/white",
+        "type": "FILL",
+        "remote": true,
+        "description": ""
+      },
+      {
+        "id": "349:8158",
+        "name": "primary/pri300",
+        "type": "FILL",
+        "remote": true,
+        "description": "Press"
+      },
+      {
+        "id": "349:8159",
+        "name": "1",
+        "type": "FILL",
+        "remote": true,
+        "description": ""
+      },
+      {
+        "id": "349:8171",
+        "name": "e9",
+        "type": "FILL",
+        "remote": true,
+        "description": ""
+      },
+      {
+        "id": "349:8172",
+        "name": "system/ec",
+        "type": "FILL",
+        "remote": true,
+        "description": ""
+      },
+      {
+        "id": "349:8178",
+        "name": "success/suc500",
+        "type": "FILL",
+        "remote": true,
+        "description": "Normal"
+      },
+      {
+        "id": "349:8180",
+        "name": "gray/900",
+        "type": "FILL",
+        "remote": true,
+        "description": ""
+      },
+      {
+        "id": "349:8186",
+        "name": "main/pri 100",
+        "type": "FILL",
+        "remote": true,
+        "description": ""
+      },
+      {
+        "id": "349:8181",
+        "name": "gray/500",
+        "type": "FILL",
+        "remote": true,
+        "description": ""
+      },
+      {
+        "id": "349:8188",
+        "name": "gray/300",
+        "type": "FILL",
+        "remote": true,
+        "description": ""
+      },
+      {
+        "id": "349:8187",
+        "name": "gray/white",
+        "type": "FILL",
+        "remote": true,
+        "description": ""
+      },
+      {
+        "id": "349:8189",
+        "name": "gray/700",
+        "type": "FILL",
+        "remote": true,
+        "description": ""
+      },
+      {
+        "id": "349:8190",
+        "name": "gray/bg",
+        "type": "FILL",
+        "remote": true,
+        "description": ""
+      },
+      {
+        "id": "349:8191",
+        "name": "primary/pri975",
+        "type": "FILL",
+        "remote": true,
+        "description": ""
+      },
+      {
+        "id": "349:8193",
+        "name": "gray/400",
+        "type": "FILL",
+        "remote": true,
+        "description": ""
+      }
+    ]
+  },
+  {
+    "type": "TEXT",
+    "styles": [
+      {
+        "id": "2:53",
+        "name": "Default/Bold/Body",
+        "type": "TEXT",
+        "remote": true,
+        "description": ""
+      },
+      {
+        "id": "560:1090",
+        "name": "14/bd/140",
+        "type": "TEXT",
+        "remote": false,
+        "description": ""
+      },
+      {
+        "id": "560:1064",
+        "name": "40/bd/120",
+        "type": "TEXT",
+        "remote": false,
+        "description": ""
+      },
+      {
+        "id": "560:1063",
+        "name": "60/bd/60",
+        "type": "TEXT",
+        "remote": false,
+        "description": ""
+      },
+      {
+        "id": "560:1065",
+        "name": "32/bd/120",
+        "type": "TEXT",
+        "remote": false,
+        "description": ""
+      },
+      {
+        "id": "560:1066",
+        "name": "28/bd/120",
+        "type": "TEXT",
+        "remote": false,
+        "description": ""
+      },
+      {
+        "id": "560:1067",
+        "name": "24/bd/120",
+        "type": "TEXT",
+        "remote": false,
+        "description": ""
+      },
+      {
+        "id": "560:1068",
+        "name": "24/bd/140",
+        "type": "TEXT",
+        "remote": false,
+        "description": ""
+      },
+      {
+        "id": "560:1069",
+        "name": "24/sb/120",
+        "type": "TEXT",
+        "remote": false,
+        "description": ""
+      },
+      {
+        "id": "560:1070",
+        "name": "24/sb/140",
+        "type": "TEXT",
+        "remote": false,
+        "description": ""
+      },
+      {
+        "id": "560:1071",
+        "name": "20/bd/140",
+        "type": "TEXT",
+        "remote": false,
+        "description": ""
+      },
+      {
+        "id": "560:1072",
+        "name": "20/bd/160",
+        "type": "TEXT",
+        "remote": false,
+        "description": ""
+      },
+      {
+        "id": "560:1073",
+        "name": "20/sb/140",
+        "type": "TEXT",
+        "remote": false,
+        "description": ""
+      },
+      {
+        "id": "560:1074",
+        "name": "20/sb/160",
+        "type": "TEXT",
+        "remote": false,
+        "description": ""
+      },
+      {
+        "id": "560:1075",
+        "name": "20/rg/140",
+        "type": "TEXT",
+        "remote": false,
+        "description": ""
+      },
+      {
+        "id": "560:1077",
+        "name": "20/rg/160",
+        "type": "TEXT",
+        "remote": false,
+        "description": ""
+      },
+      {
+        "id": "560:1078",
+        "name": "18/bd/140",
+        "type": "TEXT",
+        "remote": false,
+        "description": ""
+      },
+      {
+        "id": "560:1079",
+        "name": "18/bd/160",
+        "type": "TEXT",
+        "remote": false,
+        "description": ""
+      },
+      {
+        "id": "560:1080",
+        "name": "18/sb/140",
+        "type": "TEXT",
+        "remote": false,
+        "description": ""
+      },
+      {
+        "id": "560:1081",
+        "name": "18/sb/160",
+        "type": "TEXT",
+        "remote": false,
+        "description": ""
+      },
+      {
+        "id": "560:1082",
+        "name": "18/rg/140",
+        "type": "TEXT",
+        "remote": false,
+        "description": ""
+      },
+      {
+        "id": "560:1083",
+        "name": "18/rg/160",
+        "type": "TEXT",
+        "remote": false,
+        "description": ""
+      },
+      {
+        "id": "560:1084",
+        "name": "16/bd/140",
+        "type": "TEXT",
+        "remote": false,
+        "description": ""
+      },
+      {
+        "id": "560:1085",
+        "name": "16/bd/160",
+        "type": "TEXT",
+        "remote": false,
+        "description": ""
+      },
+      {
+        "id": "560:1086",
+        "name": "16/sb/140",
+        "type": "TEXT",
+        "remote": false,
+        "description": ""
+      },
+      {
+        "id": "560:1087",
+        "name": "16/sb/160",
+        "type": "TEXT",
+        "remote": false,
+        "description": ""
+      },
+      {
+        "id": "560:1088",
+        "name": "16/rg/140",
+        "type": "TEXT",
+        "remote": false,
+        "description": ""
+      },
+      {
+        "id": "560:1089",
+        "name": "16/rg/160",
+        "type": "TEXT",
+        "remote": false,
+        "description": ""
+      },
+      {
+        "id": "560:1091",
+        "name": "14/bd/160",
+        "type": "TEXT",
+        "remote": false,
+        "description": ""
+      },
+      {
+        "id": "560:1092",
+        "name": "14/sb/140",
+        "type": "TEXT",
+        "remote": false,
+        "description": ""
+      },
+      {
+        "id": "560:1093",
+        "name": "14/sb/160",
+        "type": "TEXT",
+        "remote": false,
+        "description": ""
+      },
+      {
+        "id": "560:1094",
+        "name": "14/rg/140",
+        "type": "TEXT",
+        "remote": false,
+        "description": ""
+      },
+      {
+        "id": "560:1095",
+        "name": "14/rg/160",
+        "type": "TEXT",
+        "remote": false,
+        "description": ""
+      },
+      {
+        "id": "560:1096",
+        "name": "13/bd/140",
+        "type": "TEXT",
+        "remote": false,
+        "description": ""
+      },
+      {
+        "id": "560:1097",
+        "name": "13/bd/160",
+        "type": "TEXT",
+        "remote": false,
+        "description": ""
+      },
+      {
+        "id": "560:1098",
+        "name": "13/sb/140",
+        "type": "TEXT",
+        "remote": false,
+        "description": ""
+      },
+      {
+        "id": "560:1099",
+        "name": "13/sb/160",
+        "type": "TEXT",
+        "remote": false,
+        "description": ""
+      },
+      {
+        "id": "560:1100",
+        "name": "13/rg/140",
+        "type": "TEXT",
+        "remote": false,
+        "description": ""
+      },
+      {
+        "id": "560:1101",
+        "name": "13/rg/160",
+        "type": "TEXT",
+        "remote": false,
+        "description": ""
+      },
+      {
+        "id": "560:1102",
+        "name": "12/bd/140",
+        "type": "TEXT",
+        "remote": false,
+        "description": ""
+      },
+      {
+        "id": "560:1103",
+        "name": "12/bd/160",
+        "type": "TEXT",
+        "remote": false,
+        "description": ""
+      },
+      {
+        "id": "560:1106",
+        "name": "12/rg/140",
+        "type": "TEXT",
+        "remote": false,
+        "description": ""
+      },
+      {
+        "id": "560:1107",
+        "name": "12/rg/160",
+        "type": "TEXT",
+        "remote": false,
+        "description": ""
+      },
+      {
+        "id": "560:1108",
+        "name": "11/bd/140",
+        "type": "TEXT",
+        "remote": false,
+        "description": ""
+      },
+      {
+        "id": "560:1109",
+        "name": "11/bd/160",
+        "type": "TEXT",
+        "remote": false,
+        "description": ""
+      },
+      {
+        "id": "560:1110",
+        "name": "11/sb/140",
+        "type": "TEXT",
+        "remote": false,
+        "description": ""
+      },
+      {
+        "id": "560:1111",
+        "name": "11/sb/160",
+        "type": "TEXT",
+        "remote": false,
+        "description": ""
+      },
+      {
+        "id": "560:1112",
+        "name": "11/rg/140",
+        "type": "TEXT",
+        "remote": false,
+        "description": ""
+      },
+      {
+        "id": "560:1113",
+        "name": "11/rg/160",
+        "type": "TEXT",
+        "remote": false,
+        "description": ""
+      },
+      {
+        "id": "561:1042",
+        "name": "12/sb/140",
+        "type": "TEXT",
+        "remote": false,
+        "description": ""
+      },
+      {
+        "id": "561:1043",
+        "name": "12/sb/160",
+        "type": "TEXT",
+        "remote": false,
+        "description": ""
+      },
+      {
+        "id": "349:8090",
+        "name": "40/bd/130",
+        "type": "TEXT",
+        "remote": true,
+        "description": ""
+      },
+      {
+        "id": "349:8091",
+        "name": "30/bd/130",
+        "type": "TEXT",
+        "remote": true,
+        "description": ""
+      },
+      {
+        "id": "349:8092",
+        "name": "30/28/bd/130",
+        "type": "TEXT",
+        "remote": true,
+        "description": ""
+      },
+      {
+        "id": "349:8093",
+        "name": "25/bd/130",
+        "type": "TEXT",
+        "remote": true,
+        "description": ""
+      },
+      {
+        "id": "349:8094",
+        "name": "20/bd/130",
+        "type": "TEXT",
+        "remote": true,
+        "description": ""
+      },
+      {
+        "id": "349:8101",
+        "name": "18/bd/130",
+        "type": "TEXT",
+        "remote": true,
+        "description": ""
+      },
+      {
+        "id": "349:8104",
+        "name": "15/bd/130",
+        "type": "TEXT",
+        "remote": true,
+        "description": ""
+      },
+      {
+        "id": "349:8107",
+        "name": "13/bd/130",
+        "type": "TEXT",
+        "remote": true,
+        "description": ""
+      },
+      {
+        "id": "349:8097",
+        "name": "13/rg/130",
+        "type": "TEXT",
+        "remote": true,
+        "description": ""
+      },
+      {
+        "id": "349:8110",
+        "name": "12/bd/130",
+        "type": "TEXT",
+        "remote": true,
+        "description": ""
+      },
+      {
+        "id": "349:8113",
+        "name": "11/bd/130",
+        "type": "TEXT",
+        "remote": true,
+        "description": ""
+      },
+      {
+        "id": "349:8106",
+        "name": "15/rg/160",
+        "type": "TEXT",
+        "remote": true,
+        "description": ""
+      },
+      {
+        "id": "349:8138",
+        "name": "11/rg/130",
+        "type": "TEXT",
+        "remote": true,
+        "description": ""
+      },
+      {
+        "id": "349:8099",
+        "name": "11/rg/130",
+        "type": "TEXT",
+        "remote": true,
+        "description": ""
+      },
+      {
+        "id": "349:8109",
+        "name": "13/rg/160",
+        "type": "TEXT",
+        "remote": true,
+        "description": ""
+      },
+      {
+        "id": "349:8095",
+        "name": "18/rg/130",
+        "type": "TEXT",
+        "remote": true,
+        "description": ""
+      },
+      {
+        "id": "349:8185",
+        "name": "13/rg/130",
+        "type": "TEXT",
+        "remote": true,
+        "description": ""
+      },
+      {
+        "id": "349:8192",
+        "name": "18/rg/130",
+        "type": "TEXT",
+        "remote": true,
+        "description": ""
+      }
+    ]
+  }
+]

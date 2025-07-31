@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "965898362086",
+    "project_id": "seouloppa-aead2",
+    "storage_bucket": "seouloppa-aead2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:965898362086:android:f3319c840c37d9f6ac2f27",
+        "android_client_info": {
+          "package_name": "com.remy.seouloppa"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiyIFTByXVqSCvgXff6K7f6f7acUqEMoU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
