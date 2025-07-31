@@ -142,6 +142,8 @@ class _CustomButtonState extends State<CustomButton> {
           child: InkWell(
             onTap: widget.isEnabled ? widget.onPressed : null,
             borderRadius: BorderRadius.circular(_borderRadius),
+            splashColor: Colors.transparent, // 물결 효과 제거
+            highlightColor: Colors.transparent, // 하이라이트 효과 제거
             child: Container(
               alignment: Alignment.center,
               child: _buildButtonContent(),
