@@ -32,8 +32,8 @@ class AppSpacing {
   // StartScreen specific gaps (Design Tokens 기반)
   static const double startScreenMainContentGap = s20;      // main_content gap
   static const double startScreenTextContainerGap = s24;   // text_container gap  
-  static const double startScreenButtonContainerGap = s20; // button_container gap
-  static const double startScreenSocialButtonsGap = s10;   // social_buttons_wrapper gap
+  static const double startScreenButtonContainerGap = s16; // button_container gap
+  static const double startScreenSocialButtonsGap = s8;   // social_buttons_wrapper gap
 
   // Padding values using Design Tokens
   static const EdgeInsets paddingS2 = EdgeInsets.all(s2);

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:video_player/video_player.dart';
 import '../theme/typography.dart';
 import '../theme/app_colors.dart';
 import '../theme/app_spacing.dart';
@@ -21,6 +22,8 @@ class _StartScreenState extends State<StartScreen> with TickerProviderStateMixin
   Timer? _textTimer;
   late AnimationController _fadeController;
   late Animation<double> _fadeAnimation;
+  VideoPlayerController? _videoController;
+  bool _videoError = false;
 
   // Figma에서 추출한 5초마다 변경되는 텍스트들
   final List<String> _texts = [
@@ -33,6 +36,9 @@ class _StartScreenState extends State<StartScreen> with TickerProviderStateMixin
   @override
   void initState() {
     super.initState();
+    
+    // 비디오 초기화 (에러 처리 포함)
+    _initializeVideo();
     
     // 페이드 애니메이션 설정
     _fadeController = AnimationController(
@@ -69,20 +75,84 @@ class _StartScreenState extends State<StartScreen> with TickerProviderStateMixin
     });
   }
 
+  void _initializeVideo() async {
+    try {
+      _videoController = VideoPlayerController.asset('assets/movie/test.mp4');
+      await _videoController!.initialize();
+      _videoController!.setLooping(true);
+      _videoController!.play();
+      if (mounted) {
+        setState(() {});
+      }
+    } catch (e) {
+      print('Video initialization error: $e');
+      _videoError = true;
+      if (mounted) {
+        setState(() {});
+      }
+    }
+  }
+
   @override
   void dispose() {
     _textTimer?.cancel();
     _fadeController.dispose();
+    _videoController?.dispose();
     super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // Figma 배경색: rgba(0.94, 0.88, 1.00, 1.00)
-      backgroundColor: AppColors.startScreenBackground,
-      body: SafeArea(
-        child: container_body(),
+      backgroundColor: Colors.black,
+      body: Stack(
+        children: [
+          // 배경 비디오 또는 대체 배경
+          _buildVideoBackground(),
+          
+          // 반투명 오버레이
+          Container(
+            color: Colors.black.withOpacity(0.3),
+          ),
+          
+          // 컨텐츠
+          SafeArea(
+            child: container_body(),
+          ),
+        ],
+      ),
+    );
+  }
+  
+  Widget _buildVideoBackground() {
+    if (_videoError || _videoController == null) {
+      // 비디오 오류 시 기본 배경
+      return Container(
+        color: AppColors.startScreenBackground,
+      );
+    }
+    
+    if (!_videoController!.value.isInitialized) {
+      // 비디오 로딩 중
+      return Container(
+        color: AppColors.startScreenBackground,
+        child: const Center(
+          child: CircularProgressIndicator(
+            color: Colors.white,
+          ),
+        ),
+      );
+    }
+    
+    // 비디오 재생
+    return SizedBox.expand(
+      child: FittedBox(
+        fit: BoxFit.cover,
+        child: SizedBox(
+          width: _videoController!.value.size.width,
+          height: _videoController!.value.size.height,
+          child: VideoPlayer(_videoController!),
+        ),
       ),
     );
   }
@@ -90,8 +160,8 @@ class _StartScreenState extends State<StartScreen> with TickerProviderStateMixin
   /// container_body - Figma Frame 이름 그대로
   Widget container_body() {
     return Padding(
-      // Figma container_body padding: right 24px, bottom 40px, left 24px
-      padding: AppSpacing.paddingHorizontalXXL.copyWith(bottom: 40),
+      // Figma container_body padding: right 24px, bottom m-20, left 24px
+      padding: AppSpacing.paddingHorizontalXXL.copyWith(bottom: AppSpacing.m20),
       child: Column(
         children: [
           // main_content Frame (Figma 구조 일치)
@@ -142,7 +212,7 @@ class _StartScreenState extends State<StartScreen> with TickerProviderStateMixin
             _texts[_currentTextIndex],
             AppTypography.s16sb22, // Figma: Pretendard Medium 16px, 24px line height
             textAlign: TextAlign.center,
-            color: AppColors.startScreenMainText, // rgba(0.66, 0.50, 0.58, 1.00)
+            color: AppColors.text900, // color.text.900 - 흰색
           ),
         ),
       ),

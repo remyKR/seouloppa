@@ -132,7 +132,7 @@ class _CustomButtonState extends State<CustomButton> {
           borderRadius: BorderRadius.circular(_borderRadius),
           border: widget.color == ButtonColor.bright
               ? Border.all(
-                  color: AppColors.lineDefault, // color.line.default - bright 버튼 테두리
+                  color: AppColors.stateWhiteDefault, // color.state.white.default - 흰색 테두리
                   width: 1.0,
                 )
               : null,

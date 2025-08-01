@@ -40,6 +40,9 @@ dependencies:
 
   # SVG 지원
   flutter_svg: ^2.0.9
+  
+  # 비디오 플레이어 (안정 버전)
+  video_player: ^2.8.2
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -72,6 +75,7 @@ flutter:
     - assets/images/
     - assets/icons/
     - assets/fonts/
+    - assets/movie/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
