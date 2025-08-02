@@ -4,15 +4,16 @@
 
 ```mermaid
 flowchart TD
-    Start[시작] --> LoginSelect[로그인 방식 선택]
+    Start[시작] --> StartScreen[시작 화면<br/>───────────<br/>이메일로 시작<br/>구글로 시작<br/>애플로 시작<br/>───────────<br/>회원가입]
     
-    LoginSelect --> Email[이메일로 시작]
-    LoginSelect --> Google[구글로 시작]
-    LoginSelect --> Apple[애플로 시작]
+    StartScreen --> Email[이메일로 시작]
+    StartScreen --> Google[구글로 시작]
+    StartScreen --> Apple[애플로 시작]
+    StartScreen --> SignupButton[회원가입]
     
     Email --> EmailLogin[이메일/비밀번호 입력]
-    Google --> GoogleAuth[구글 로그인]
-    Apple --> AppleAuth[애플 로그인]
+    Google --> GoogleAuth[구글 인증]
+    Apple --> AppleAuth[애플 인증]
     
     EmailLogin --> CheckMember{회원정보 확인}
     GoogleAuth --> CheckMember
@@ -20,6 +21,8 @@ flowchart TD
     
     CheckMember -->|회원| Home[홈 화면]
     CheckMember -->|비회원| SignupStart[회원가입 화면]
+    
+    SignupButton --> SignupStart
     
     SignupStart --> PhoneVerify[핸드폰 번호 인증]
     
@@ -57,18 +60,23 @@ flowchart TD
 ## 플로우 설명
 
 ### 1. 시작 화면
-- 사용자가 앱을 처음 실행하면 로그인 방식을 선택하는 화면이 표시됩니다.
-- 이메일, 구글, 애플 로그인 중 선택 가능합니다.
+- 사용자가 앱을 처음 실행하면 시작 화면이 표시됩니다.
+- 상단에 세 가지 로그인 버튼:
+  - **이메일로 시작**: 이메일 로그인
+  - **구글로 시작**: 구글 계정 로그인
+  - **애플로 시작**: 애플 계정 로그인
+- 하단에 **회원가입** 버튼: 신규 회원 직접 가입
 
 ### 2. 로그인 프로세스
-- **이메일**: 이메일과 비밀번호 입력
-- **구글**: 구글 OAuth 인증
-- **애플**: 애플 Sign in with Apple 인증
+- **이메일로 시작**: 이메일과 비밀번호 입력
+- **구글로 시작**: 구글 OAuth 인증
+- **애플로 시작**: 애플 Sign in with Apple 인증
+- 인증 후 회원정보 확인:
+  - **기존 회원**: 홈 화면으로 이동
+  - **비회원**: 회원가입 화면으로 이동
 
-### 3. 회원 확인
-- 로그인 정보로 기존 회원인지 확인
-- 기존 회원이면 홈 화면으로 이동
-- 신규 회원이면 회원가입 프로세스 시작
+### 3. 회원가입 프로세스
+- **회원가입 버튼** 또는 **비회원 로그인 시도** 시 회원가입 화면으로 이동
 
 ### 4. 회원가입 단계
 
